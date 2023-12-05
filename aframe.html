@@ -5,18 +5,19 @@
     <title>360&deg; Image</title>
     <meta name="description" content="360&deg; Image - A-Frame">
     <script src="./aframe-master.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-particle-system-component@1.1.4/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     
   </head>
   <body>
     <a-scene>
       <a-sky src="assets/Park.jpg" rotation="0 -130 0"></a-sky>
       <!--<a-sky src="assets/Kirche.jpg" rotation="0 -130 0"></a-sky> -->
-      <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
+      <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
 
       <a-text font="kelsonsans" value="Hallo :-)" width="6" position="-2.5 0.25 -1.5"
               rotation="0 15 0"></a-text>
     </a-scene>
+    
 
   <!--<a-scene>
       <a-sky src="assets/Kirche.jpg" rotation="0 -130 0"></a-sky>
