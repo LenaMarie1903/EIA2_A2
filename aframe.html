@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>360&deg; Image</title>
-    <meta name="description" content="360&deg; Image - A-Frame">
-    <script src="./aframe-master.js"></script>
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    
-  </head>
-  <body>
-    <a-scene>
+
+<head>
+  <meta charset="utf-8">
+  <title>360&deg; Image</title>
+  <meta name="description" content="360&deg; Image - A-Frame">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script defer src="script.js"></script>
+  <!--<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js" ></script> -->
+
+</head>
+
+<body>
+  <a-scene>
+
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+
+    <a-entity id="szene1">
       <a-sky src="assets/Park.jpg" rotation="0 -130 0"></a-sky>
       <!--<a-sky src="assets/Kirche.jpg" rotation="0 -130 0"></a-sky> -->
-      <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
+      <!--<a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity> --><a-box id="clickArea" material="opacity: 0" geometry="" position="-1.984 0.395 -2.2533" scale="2.37444 1 1"></a-box>
+      <a-text id="textOne" value="Hallo :-)" width="6" position="-2.5 0.25 -1.5" rotation="0 15 0"></a-text>
+    </a-entity>
 
-      <a-text font="kelsonsans" value="Hallo :-)" width="6" position="-2.5 0.25 -1.5"
-              rotation="0 15 0"></a-text>
-    </a-scene>
-    
-
-  <!--<a-scene>
+    <a-entity id="szene2">
       <a-sky src="assets/Kirche.jpg" rotation="0 -130 0"></a-sky>
+      <!--<a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity> -->
+      <a-box id="clickArea2" material="opacity: 0" geometry="" position="1 0.395 -2.2533" scale="2.37444 1 1"></a-box>
+      <a-text id="textTwo" value="Hallo :-)"  width="6" position="1 0.25 -1.5" rotation="0 15 0"></a-text>
+    </a-entity>
+  </a-scene>
 
-      <a-text font="kelsonsans" value="Hallo :-)" width="6" position="-2.5 0.25 -1.5"
-              rotation="0 15 0"></a-text>
-    </a-scene>// --> 
-  </body>
+
+
+</body>
+
 </html>
