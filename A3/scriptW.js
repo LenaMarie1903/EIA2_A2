@@ -3,7 +3,7 @@ let stars = ["assets/Objekt2.png", , "assets/Stern.png", "assets/stern1.png", "a
 /* Ein leeres Array erstellen*/
 let imageArray = [];
 
-//Hier wird das Grundgerüst festgelegt um random Größe und Position anzuordnen. 
+//Hier wird das Grundgerüst festgelegt um random Größe und Position anzuordnen. Ein Wert wird zurückgegeben. 
 function getRandomNumber(min, max) {
     return Math.random() * (max - min) + min;
 }
