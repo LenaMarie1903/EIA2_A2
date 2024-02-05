@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #f3f5f8;
+}
+
+/* Navigation  */
+.container{
+    width:100%;
+    min-height:100vh;
+    background-color: #f3f5f8;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    margin: 20px;
+    padding: 0;
+    margin: 0;
+    background-color:  #f3f5f8;
+}
+
+.logo{
+    display: flex;
+    font-size:40px;
+    font-weight: 800;
+    color:#3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.navItems{
+    display: flex;
+    padding: 20px;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 30px;
+}
+
+.navItems li a{
+   font-size:25px;
+   color: #3d535f;
+   letter-spacing: 3px;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+.navItems li:hover a,
+.links a:hover {
+   color: #0a9487;
+ }
+
+.links{
+    padding: 10px;
+}
+
+.links a{
+    font-size: 40px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+
+/* Body  */
+.wrapper{
+    display: flex;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+/* Die Kreise  */
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left:-12%;
+    top: 40%;
+    background: linear-gradient(45deg,#043e38, #0a9487);
+    animation: object1 6s linear infinite;
+}
+
+/* .wrapper::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left:35%;
+    top: 12%;
+    background: linear-gradient(45deg,#043e38, #0a9487);
+    animation: object2 6s linear infinite;
+} */
+
+/* Die Animation der Kreise */
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+
+/* @keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+} */
+
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+
+.cols{
+    width: 60%;
+}
+
+/* Überschrift */
+.headline{
+    padding: 30px 0;
+    position:absolute;
+    display: block;
+    font-size:35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+/* .headline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #0a9487;
+} */
+
+/* Text */
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color:#3d535f;
+}
+
+p{  position: relative;
+    top: 80px;
+    margin: 10px;
+    display: block;
+    text-align: justify;
+    width: 90%;
+    font-size: 1.2em;
+    color: #2a3a42;
+}
+b{
+    font-size: 1.5;
+    letter-spacing: 2px;
+}
+/* Button style */
+/* .btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button{
+    outline:none;
+    border:none;
+    cursor: pointer;
+    font-size:25px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+} */
+
+/* button:hover{
+    background-color: #0a9487;
+} */
+
+ 
+ /* The dropdown container */
+ .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 120;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+ p img{
+    padding: 15px 0px;
+    margin: 5px;
+    align-items: center;
+ }
+
+ footer {
+    width: 100%;
+    display: block;
+    max-height: 90px;
+    margin: 0;
+    padding: 0;
+
+ }
+
+ footer div{
+    height: 80px;
+    background-color: #043e38;
+    width: 100%;
+    padding: 20px 40px;
+    text-align: right;
+    color: #f3f5f8;
+ }
+
+ footer p{
+    text-align: left;
+    position: relative;
+    top: 90px;
+    padding-left: 27px;
+    color: #b3b4b6;
+ }
+
+ .wrapper i{
+    display: inline;
+    font-size: 1em;
+    float: right;
+    right: -40%;
+    padding: 0px 5px;
+ }
+
+.links_footer a:hover {
+   color: #0a9487;
+ }
+
+.links_footer a{
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+    color: #f3f5f8;
+}
